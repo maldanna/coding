@@ -1,5 +1,7 @@
 from multiprocessing import Queue
 #imoprt Queue
+#imoprt queue 
+#q1=queue.Queue() then all normal operations
 q1=Queue()
 for i in range(5):
   q1.put(i)
