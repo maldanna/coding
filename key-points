@@ -1,0 +1,338 @@
+content:
+line number:   topic:
+                global 
+
+
+
+
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+global :
+******************************************************
+we should mentain global variable when we deal with some recusion program which are going to use same variable throught recursion
+
+
+def recursion():
+        global g_variable 
+        then use
+      
+      
+declare global varible out side the function and initialize it
+g_variable=0
+
+
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+
+
+
+
+
+
+print("%d/%d"%(2,3)) # it is exact formt to print
+
+To print in sameline :
+print(i,end=" ");
+to print multiple values in print():
+
+print(“this is number1 =   and this is numb2=  “,%(num1,num2))
+ //using tuple in print this is best one
+
+
+
+
+string=”hi how rrare you”
+s.find(“how”)
+# it will write 0 on success -1 on failure
+import re
+re.search(“how”,string)
+
+# concentrae on regular expressin in this mainly 
+
+
+@@@@@@@@@@@@@@@@    DICTIONARY:
+
+# dictinory with default value
+note: sometimes instead of collection we have to use collections
+ from collection import defaultdict
+dict1=defaultdict(int)
+$$ to set deafult value to our required then follow it 
+
+dict2=defaultdict(lambda:3)
+
+to get dictionary keys in list
+
+## keys1=dict1.keys()
+
+for i in range dict1.keys()
+	list2.ppend(i)
+
+
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@ LIST
+
+
+to search an element in given list of python
+
+i=element
+
+i in list1  ==>> True on success otherwise False 
+
+to get index of an element in given list
+
+list1.index(element)
+to initialize list with some interger  then
+n =some integer value
+list1=[3]*n
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@  MATH
+
+
+
+# math 
+x=math.ceil(2/3)
+
+
+
+>>> string="abbaaa"
+>>> string = "".join(reversed(string))
+>>> string
+'aaabba'
+
+lcm=int((num1*num2)/gcd)
+
+ 
+@@@@@@@@@@@@@@@@@@@@Strings
+
+a=97
+z=97+26-1
+z=122
+A=65
+Z=65+26-1
+we will get   97  <==  on ord(a)
+			a <== on chr(97)
+
+to check given charecter is digit or not 
+by:  char.isdigit() ==> tru
+ex: num1=”11”
+	num1[i].isdigit()
+note: isdigit() can apply only for charecters
+
+
+### conveert into upper and lower
+“ancca”.upper() ==>”ANCCA”
+“ABC”.lower() ===> “abc”
+
+
+Bitwise Operator 	
+
+check programs in your pc
+
+n will have (log(n) with base 2 )+1 bits 
+ex:n=32   it will contain 5+1 bits
+
+to set base for log
+id log(number,base)
+ex:og(32,2) ==> 5
+
+
+x is a number
+
+value of 2*x will be  x<<1
+x/2 ==> x>>1
+
+
+
+from binary to decimal
+
+int('101010', 2) ==>42
+
+
+
+
+@@@@@@@@@@@@@@@@
+
+array=[1,3,2,7,9,0]
+#to  remove an array element we hae 2 elements 
+1.del a[index]
+2.arr.remove(ele) if you wnat delete particular  elemnt then use it 
+if duplicate there only first occurence element will be delete
+
+
+@@@@@@@@@@@@@@@@@
+
+array=[1,2,3,4]
+array.insert(index,element) # without removing prevous element we can insert in required positions (internaly it will sap )
+array.append(elem)#insert at end
+
+
+
+
+Input:
+    list=[int(x) for x in input().split()]
+
+print("%d/%d"%(2,3)) # it is exact formt to print
+
+To print in sameline :
+print(i,end=" ");
+to print multiple values in print():
+
+print(“this is number1 =   and this is numb2=  “,%(num1,num2))
+ //using tuple in print this is best one
+
+
+
+
+string=”hi how rrare you”
+s.find(“how”)
+# it will write 0 on success -1 on failure
+import re
+re.search(“how”,string)
+
+# concentrae on regular expressin in this mainly 
+
+
+@@@@@@@@@@@@@@@@    DICTIONARY:
+
+# dictinory with default value
+ from collection import defaultdict
+dict1=defaultdict(int)
+$$ to set deafult value to our required then follow it 
+
+dict2=defaultdict(lambda:3)
+
+to get dictionary keys in list
+
+## keys1=dict1.keys()
+
+for i in range dict1.keys()
+	list2.ppend(i)
+
+
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@ LIST
+
+
+to search an element in given list of python
+
+i=element
+
+i in list1  ==>> True on success otherwise False 
+
+to get index of an element in given list
+
+list1.index(element)
+to initialize list with some interger  then
+n =some integer value
+list1=[3]*n
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@  MATH
+
+
+
+# math 
+x=math.ceil(2/3)
+
+
+
+>>> string="abbaaa"
+>>> string = "".join(reversed(string))
+>>> string
+'aaabba'
+
+lcm=int((num1*num2)/gcd)
+
+ 
+@@@@@@@@@@@@@@@@@@@@Strings
+
+a=97
+z=97+26-1
+z=122
+A=65
+Z=65+26-1
+we will get   97  <==  on ord(a)
+			a <== on chr(97)
+
+to check given charecter is digit or not 
+by:  char.isdigit() ==> tru
+ex: num1=”11”
+	num1[i].isdigit()
+note: isdigit() can apply only for charecters
+
+
+### conveert into upper and lower
+“ancca”.upper() ==>”ANCCA”
+“ABC”.lower() ===> “abc”
+
+
+Bitwise Operator 	
+
+check programs in your pc
+
+n will have (log(n) with base 2 )+1 bits 
+ex:n=32   it will contain 5+1 bits
+
+to set base for log
+id log(number,base)
+ex:og(32,2) ==> 5
+
+
+x is a number
+
+value of 2*x will be  x<<1
+x/2 ==> x>>1
+
+
+
+from binary to decimal
+
+int('101010', 2) ==>42
+
+
+
+
+@@@@@@@@@@@@@@@@
+
+array=[1,3,2,7,9,0]
+#to  remove an array element we hae 2 elements 
+1.del a[index]
+2.arr.remove(ele) if you wnat delete particular  elemnt then use it 
+if duplicate there only first occurence element will be delete
+
+
+
+
+Time Table:
+
+1.heapq
+2.priority_queue
+problmes 
+https://www.geeksforgeeks.org/median-of-stream-of-running-integers-using-stl/
+
+
+
+Queue-module :(read):
+
+
+link ( http://www.learn4master.com/programming-language/python/python-queue-for-multithreading )
+
+
+import  Queue(in few systems)
+from multiprocessing  import Queue
+
+Not:based nad system and python version we will encouter some problems if we will use 1 St one for import
+
+
