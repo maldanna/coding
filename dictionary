@@ -1,4 +1,7 @@
 from collection import defaultdict
+
+@@@@@@@@@@@@@@@@@@ dict1.keys()   dict1.values()  dict1.item() ======>  it will return key and value pair at same time
+
 ******************************
 ss=defaultdict(list) =====> default value will be list
 ss1=defaultdict(lambda:1)  ===>default value is 1
