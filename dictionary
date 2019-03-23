@@ -23,3 +23,9 @@ input may be list or tuple also
 
 *********************************
 
+soting
+dict1={'b':23,'a':222,'c':2}
+sorted_keys=sorted(dict1.keys(),reverse=True) is will want reverse this is enough
+sorted_base_values_getting_keys_values_pairs_in_tuple_in_list=sorted_keys(dict1.items(),lambda x :x[1],reverse=True)
+
+Output:[('a',222),('b',23),('c',2)]
