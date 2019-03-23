@@ -1,0 +1,22 @@
+from collection import defaultdict
+******************************
+ss=defaultdict(list) =====> default value will be list
+ss1=defaultdict(lambda:1)  ===>default value is 1
+**********************************
+
+from collection import OrderedDict
+ss=OrderedDict()
+it is same as dict except order of insertion 
+not same as defaultdict
+
+*******************************
+
+preapring dictionary from keys
+
+ss="1212118282829230"
+dd=OrderedDict.fromkeys(ss,0)  ======>>> here 0 is inital value ,ss  is nput keys
+order will maintain
+input may be list or tuple also
+
+*********************************
+
