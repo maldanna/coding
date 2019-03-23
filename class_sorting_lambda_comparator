@@ -1,0 +1,21 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ lambda_sorting
+
+
+class Student(object):
+    def __init__(self, name=None, mark=None):
+        self.name = name
+        self.mark = mark
+
+student_list = [
+    Student(name="ssdAndre", mark=10),
+    Student(name="zzAndaa", mark=10),
+    Student(name="da", mark=5),
+    Student(name="Palma", mark=7),
+]
+
+student_list = sorted(student_list, key=lambda student: (student.mark,student.name) ,reverse=True)
+print(student_list[0].name)
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ======= > comparator
+
