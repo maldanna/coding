@@ -62,7 +62,23 @@ res=string1.translate(mapped)
 print(res)  =============>>>>>>>>>>> zyokx
 
 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
+LONGEST SUBSTRING IN STRINGS
+from difflib import SequenceMatcher
+smatch=SequenceMatcher(None,str1,str2)
+match=smatch.find_longest_match(0,len(str1),0,len(str2))
+print(match) ===>match(a=startmatch_index ,b=end_matchindex,size)
+print(str1[match.a:match.a+size)) 
+
+  NOTE:HERE B IS EXCLUDE
+  
+  
+  
+  
+  
+  print(str1[match.a:match.b]
+  
 
 
 
