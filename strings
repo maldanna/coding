@@ -40,6 +40,28 @@ isnumeric()     isalpha()         isalnum()
 '2a'isnumeric     =======>>>False
 
 **********************************************************************
+**************replace***************
+str1="abc"
+print(str1.replace('a','o')       ========>>>>>>>>obc
+
+
+to replace lot of letters in given string then use maketrans static function
+
+example:if we want replace a with z
+                           b with y
+                           c with x
+                           like this ......
+                           
+1.step :map
+a="abc"
+b="zyx"
+mapped=str.maketrans(a,b)
+
+string1="abokc"
+res=string1.translate(mapped)
+print(res)  =============>>>>>>>>>>> zyokx
+
+
 
 
 
