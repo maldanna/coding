@@ -1,0 +1,80 @@
+# 
+
+link:https://www.tutorialspoint.com/namedtuple-in-python
+
+
+
+namedtuple is available in collection module only in some cases it will be usefu;
+from collections import namedtuple
+
+#student_named_tuple is name of that particular tuple and remaining things are attributes of
+#that paritcular named tuple it is just like a class
+
+student=namedtuple('student_name_tuple',['name','age','marks'])
+student1=student('maldanna','21','85')
+student2=student('rakesh','21','89')
+
+print(student2)
+
+
+#output: student_name_tuple(name='rakesh', age='21', marks='89')
+print("name is %s and age is %s" %(student2.name,student2.age))
+
+#output:  name is rakesh and age is 21
+
+
+
+
+
+
+
+CONVERSION 
+
+Conversion procedures of NamedTuple
+There are some methods to convert other collections to NamedTuple. The _make() method can be used to convert an iterable object like list, tuple, etc to NamedTuple object.
+
+We can also convert a dictionary type object to NamedTuple object. For this conversion, we need the ** operator.
+
+NamedTuple can return the values with keys as OrderedDict type object. To make it OrderedDict, we have to use the _asdict() method.
+
+Example Code
+import collections as col
+#create employee NamedTuple
+Employee = col.namedtuple('Employee', ['name', 'city', 'salary'])
+#List of values to Employee
+my_list = ['Asim', 'Delhi', '25000']
+e1 = Employee._make(my_list)
+print(e1)
+#Dict to convert Employee
+my_dict = {'name':'Bibhas', 'city' : 'Kolkata', 'salary' : '30000'}
+e2 = Employee(**my_dict)
+print(e2)
+#Show the named tuple as dictionary
+emp_dict = e1._asdict()
+print(emp_dict)
+Output
+Employee(name='Asim', city='Delhi', salary='25000')
+Employee(name='Bibhas', city='Kolkata', salary='30000')
+OrderedDict([('name', 'Asim'), ('city', 'Delhi'), ('salary', '25000')])
+Some additional operations on NamedTuple
+There are some other method like _fields() and _replace(). Using the _fields() method we can check what are the different fields of NamedTuple. The _replace() method is used to replace the value of some other value.
+
+Example Code
+import collections as col
+#create employee NamedTuple
+Employee = col.namedtuple('Employee', ['name', 'city', 'salary'])
+#Add an employees
+e1 = Employee('Asim', 'Delhi', '25000')
+print(e1)
+print('The fields of Employee: ' + str(e1._fields))
+#replace the city of employee e1
+e1 = e1._replace(city='Mumbai')
+print(e1)
+Output
+Employee(name='Asim', city='Delhi', salary='25000')
+The fields of Employee: ('name', 'city', 'salary')
+Employee(name='Asim', city='Mumbai', salary='25000')
+
+
+      
+
