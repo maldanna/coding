@@ -1,2 +1,3 @@
 import defaultdict
-dict1=defaultdict(
+dict1=defaultdict(list)
+dict2=defaultdict(lambda:int
