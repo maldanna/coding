@@ -1,0 +1,25 @@
+# if we want take two values at a same time then follow code use
+
+ex: given num1 num2 
+          2     4
+          
+          num1,num2=(int(x) for x in input().split()
+          num1.num2=(str(x) for x in input().split()
+          
+# if we want take a list then 
+list1=list(map(int,input().split()))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
