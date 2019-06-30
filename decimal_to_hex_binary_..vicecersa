@@ -1,0 +1,49 @@
+decimal : to another
+
+hex(23) ==>it will print hexa decimal value
+bin(23) ===> it will print binary value
+
+vice versa:
+
+int(100,2)=====> it will give  4
+int(100,4) ==> it will give 16
+
+int(100,10) ====> it will give 100 that is second parameter is base value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
